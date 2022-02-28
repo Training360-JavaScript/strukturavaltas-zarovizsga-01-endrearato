@@ -61,6 +61,9 @@ const animals = [{
   }];
 
 const animalFilter = (list = animals, pop, zoo) => {
+    animals.map( animal => {
+      
+    } )
     return [];
 };
 
