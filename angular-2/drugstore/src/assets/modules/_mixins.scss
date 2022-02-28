@@ -3,6 +3,7 @@
 
 @mixin for-phone-only {
   @media (max-width: 599px) {
+    background-color: $yellow;
     @content
   }
 };

@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+      <th>#</th>
+      <th>Model</th>
+      <th>Make</th>
+      <th>Year</th>
+      <th>Price</th>
+      <th>Stock</th>
+      <th>Active</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let car of list$ | async">
+        <td>{{ car.id }}</td>
+        <td>{{ car.model }}</td>
+        <td>{{ car.make }}</td>
+        <td>{{ car.year }}</td>
+        <td>{{ car.price }}</td>
+        <td>{{ car.stock }}</td>
+        <td>{{ car.active }}</td>
+      </tr>
+    </tbody>
+  </table>

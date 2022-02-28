@@ -1,1 +1,20 @@
-<p>app works!</p>
+<table class="table">
+    <thead>
+      <th>#</th>
+      <th>Material</th>
+      <th>Trade</th>
+      <th>Coste</th>
+      <th>Price</th>
+      <th>Active</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let construction of list$ | async">
+        <td>{{ construction.id }}</td>
+        <td>{{ construction.material }}</td>
+        <td>{{ construction.trade }}</td>
+        <td>{{ construction.coste_code }}</td>
+        <td>{{ construction.price }}</td>
+        <td>{{ construction.active }}</td>
+      </tr>
+    </tbody>
+  </table>

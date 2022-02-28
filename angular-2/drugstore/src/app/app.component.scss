@@ -7,21 +7,21 @@
   align-items: center;
   // 2. Az animált tacskó hátterére állítsd be
   // a modul segítségével a következő színt: #d4e6ff
-
+  background-color: #d4e6ff;
   display: flex;
   justify-content: center;
   margin: 0;
 }
 
-.ball {
+.ball-decoration {
   // 3. Válaszd ki a ball-decoration és a
   // ball-sound osztályú elemeket.
   // Nesting-et használj!
-  /*{
+  .ball-sound{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-  }*/
+  }
 }
 
 .sausage-dog-animation {
@@ -32,10 +32,10 @@
   // 4. A mixins modulban találsz egy mixint,
   // amely mobilnézetre állít be új dizájnt.
   // Használd itt ezt a mixint.
-  /*{
+  @mixin for-phone-only{
     background-color: $background-phone;
     padding: 50px;
-  }*/
+  }
 }
 
 .yellow {
